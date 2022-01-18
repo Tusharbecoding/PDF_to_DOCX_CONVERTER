@@ -1,0 +1,11 @@
+from pdf2docx import Converter
+
+pdf_file = 'demo.pdf'
+
+word_file = 'demo.docx'
+
+cv = Converter(pdf_file)
+cv.convert(word_file, start=0)
+cv.close()
+
+
